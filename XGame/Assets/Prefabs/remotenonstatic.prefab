@@ -12,7 +12,9 @@ PrefabInstance:
       propertyPath: m_text
       value: 'remote non
 
-        static'
+        static
+
+        changed'
       objectReference: {fileID: 0}
     - target: {fileID: 5996686253425439695, guid: c2f22c33010747040a20f7d59f08a331,
         type: 3}
@@ -22,7 +24,22 @@ PrefabInstance:
     - target: {fileID: 5996686253425439695, guid: c2f22c33010747040a20f7d59f08a331,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 17
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996686253425439695, guid: c2f22c33010747040a20f7d59f08a331,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996686253425439695, guid: c2f22c33010747040a20f7d59f08a331,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996686253425439695, guid: c2f22c33010747040a20f7d59f08a331,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5996686254061188609, guid: c2f22c33010747040a20f7d59f08a331,
         type: 3}

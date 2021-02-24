@@ -137,7 +137,9 @@ PrefabInstance:
       propertyPath: m_text
       value: 'local non
 
-        static'
+        static
+
+        changed'
       objectReference: {fileID: 0}
     - target: {fileID: 3676821258750431760, guid: a906c26226f406647855ecd7ddd47b1d,
         type: 3}
@@ -147,16 +149,21 @@ PrefabInstance:
     - target: {fileID: 3676821258750431760, guid: a906c26226f406647855ecd7ddd47b1d,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 16
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3676821258750431760, guid: a906c26226f406647855ecd7ddd47b1d,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3676821258750431760, guid: a906c26226f406647855ecd7ddd47b1d,
         type: 3}
       propertyPath: m_textInfo.wordCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676821258750431760, guid: a906c26226f406647855ecd7ddd47b1d,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []

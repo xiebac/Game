@@ -7,6 +7,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7425143752870647491, guid: 0f5e5921b98bae642a46628715d1e959,
+        type: 3}
+      propertyPath: m_text
+      value: 'local
+
+        static
+
+        changed'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425143752870647491, guid: 0f5e5921b98bae642a46628715d1e959,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425143752870647491, guid: 0f5e5921b98bae642a46628715d1e959,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425143752870647491, guid: 0f5e5921b98bae642a46628715d1e959,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425143752870647491, guid: 0f5e5921b98bae642a46628715d1e959,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7425143753242579726, guid: 0f5e5921b98bae642a46628715d1e959,
         type: 3}
       propertyPath: m_LocalPosition.x
