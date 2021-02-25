@@ -15,16 +15,14 @@ MonoBehaviour:
   m_GroupName: Content Update
   m_Data:
     m_SerializedData: []
-  m_GUID: 04e5693c3bd884a44b32d81f316fb052
+  m_GUID: 79b7b0bfde7c7b5459e15f5bea883556
   m_SerializeEntries:
   - m_GUID: a906c26226f406647855ecd7ddd47b1d
     m_Address: Assets/Prefabs/localstatic.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 3676821258512652252, guid: a906c26226f406647855ecd7ddd47b1d,
-      type: 3}
-    m_TargetAsset: {fileID: 3676821258512652252, guid: a906c26226f406647855ecd7ddd47b1d,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: a78e22867c52c944f8b364c1c3bde04f
     m_Address: Assets/Prefabs/remotestatic.prefab
     m_ReadOnly: 0
