@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AddressableDemo.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Addressables\AddressablesManager.cs" />
+    <Compile Include="Assets\Scripts\GameLaunch\AddressableUpdater.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
