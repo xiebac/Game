@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Content Update
   m_Data:
     m_SerializedData: []
-  m_GUID: 9cb1a8125279f264d989419d901508ef
+  m_GUID: 04e5693c3bd884a44b32d81f316fb052
   m_SerializeEntries:
   - m_GUID: a906c26226f406647855ecd7ddd47b1d
     m_Address: Assets/Prefabs/localstatic.prefab

@@ -26,6 +26,7 @@ public class AddressableDemo : MonoBehaviour
     }
     public async void UpdateCatalog()
     {
+
         //开始连接服务器检查更新
         var handle = Addressables.CheckForCatalogUpdates(false);
         await handle.Task;
@@ -95,7 +96,7 @@ public class AddressableDemo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Addressables.InitializeAsync();
     }
 
     // Update is called once per frame
