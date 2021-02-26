@@ -13,6 +13,7 @@ public class AddressableUpdater : MonoBehaviour
     public Slider update_Slider;
     float totalTime = 0f;
     bool needUpdateRes = false;
+    AsyncOperationHandle downloadHandle;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,18 +57,11 @@ public class AddressableUpdater : MonoBehaviour
                     {
                         //UINoticeTip.Instance.ShowOneButtonTip("更新提示", $"本次更新大小：{size}", "确定", null);
                         //yield return UINoticeTip.Instance.WaitForResponse();
-                        var downloadHandle = Addressables.DownloadDependenciesAsync(v.Keys, Addressables.MergeMode.Union);
-                        while (!downloadHandle.IsDone)
-                        {
-                            float percentage = downloadHandle.PercentComplete;
-                            Debug.Log($"download pregress: {percentage}");
-                            update_Slider.normalizedValue = percentage;
-                        }
+                        downloadHandle = Addressables.DownloadDependenciesAsync(v.Keys, Addressables.MergeMode.Union);
                         await downloadHandle.Task;
                         Addressables.Release(downloadHandle);
                     }
                 }
-
                 Debug.Log(string.Format("UpdateFinish use {0}ms", (DateTime.Now - start).Milliseconds));
                 //yield return UpdateFinish();
                 Addressables.Release(updateHandle);
@@ -82,6 +76,11 @@ public class AddressableUpdater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (needUpdateRes) 
+        {
+            float percentage = downloadHandle.PercentComplete;
+            Debug.Log($"download pregress: {percentage}");
+            update_Slider.normalizedValue = percentage;
+        }
     }
 }

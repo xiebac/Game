@@ -103,10 +103,13 @@ public class AddressableDemo : MonoBehaviour
     public int i = 0;
     public async void TestAsync()
     {
-        i++;
-        Debug.Log("5555   "+i);
-        await Task.Delay(3000);
-        Debug.Log("3333");
+        for (int j = 0; j < 10; j++) 
+        {
+            Debug.Log("5555   " + j);
+            await Task.Delay(3000);
+            Debug.Log("3333");
+        }
+        Debug.Log("444");
     }
     // Update is called once per frame
     void Update()
