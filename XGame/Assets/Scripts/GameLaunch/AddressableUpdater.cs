@@ -63,15 +63,10 @@ public class AddressableUpdater : MonoBehaviour
                     }
                 }
                 Debug.Log(string.Format("UpdateFinish use {0}ms", (DateTime.Now - start).Milliseconds));
-                //yield return UpdateFinish();
                 Addressables.Release(updateHandle);
             }
             Addressables.Release(checkHandle);
         }
-    }
-    IEnumerator checkUpdate()
-    {
-        yield return null;
     }
     // Update is called once per frame
     void Update()
