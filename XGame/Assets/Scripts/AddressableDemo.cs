@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -97,11 +98,19 @@ public class AddressableDemo : MonoBehaviour
     void Start()
     {
         Addressables.InitializeAsync();
+        TestAsync();
     }
-
+    public int i = 0;
+    public async void TestAsync()
+    {
+        i++;
+        Debug.Log("5555   "+i);
+        await Task.Delay(3000);
+        Debug.Log("3333");
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("666  " + i);
     }
 }
