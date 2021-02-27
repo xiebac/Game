@@ -13,6 +13,5 @@ public class AddressablesManager : MonoBehaviour
     {
         var loadHandle = Addressables.LoadSceneAsync(key,LoadSceneMode.Single);
         await loadHandle.Task;
-
     }
 }
